@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
+    background: url(/Images/hero.jpg) no-repeat left fixed;
+    background-size: cover;
+    max-width: 1600px;
+    /* max-width: 90%; */
+    height: 300px;
+    overflow-x: hidden;  
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container{
+    width: 100%;
+    position: fixed; 
+    z-index: 10;
+    background-color: white;
+    opacity: 1;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    height: 20vh;
+}
+
+header .logo{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    max-width: 120px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+header ul li a:hover{
+    color: green;
+    border-bottom: 2px solid green;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox a{
+    padding: 10px;
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 5rem;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: #004D24;
+    font-size: 1.2em; 
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+    font-size: 1.8rem;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding-top: 8px, 20px;
+    background: #004D24;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 40px;
+    letter-spacing: 1px;
+}
+.content .imgBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 490px;
+}
+
+
+.partnership-form{  
+    position: relative; 
+    height: fit-content;
+
+    
+}
+.pop-up-partnership{
+    background-color: rgba(0,0,0, 0.6);
+    width: 120vw;
+    height: 400vh;
+    margin-top: -3rem;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+
+}
+
+.pop-up-content-partnership{
+    background-image: url(/Images/ABOUT\ US.svg);
+    background-attachment: fixed;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    width: 65vw;
+    margin-left: 27rem;
+    position: absolute;
+    margin-top: 130rem;
+    height: 160vh;
+    padding: 20px 30px; 
+    background-size: cover;
+    border-radius: 5px;
+    /* position: relative; */
+}
+
+ .pop-up-partnership .pop-up-content-partnership .form-partnership {
+    width: 100vw;
+    margin-top: 10rem;   
+}
+
+.form-partnership{
+    z-index:2;
+    position: absolute; 
+
+}
+
+.partnership-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -13rem;
+}
+
+.partnership-details-header > img{
+    width: 200px;
+}
+
+.partnership-details-header > p{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #f19a0e;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+ .pop-up-content-partnership > img{
+    position: absolute;
+    left: 260px;
+    top: 320px;
+    width: 30vw;
+    opacity: 1;
+    z-index: 1;
+}
+
+.pop-up-partnership .pop-up-content-partnership .form-partnership .form-element label{
+padding: 1rem;
+font-size: 1.7rem;
+font-weight: 600;
+border-radius: 1rem;
+margin-left: 1rem;
+width: 20vw;
+text-align: center;
+background-color: #f19a0e;
+}
+
+.pop-up-partnership .pop-up-content-partnership .form-partnership .form-element input[type ="text"],
+.pop-up-partnership  .pop-up-content-partnership  .form-partnership .form-element input[type ="email"]
+{
+width: 60vw;
+display: block;
+margin-top: 1.7rem;
+margin-left: 1rem;
+margin-block: 2rem;
+padding: 1rem;
+border:none;
+outline: none;
+border-radius: 1rem;
+transition: ease-in-out 0.3s;
+}
+
+.pop-up-partnership .form-partnership .form-element button{
+    width: 60%;
+    height: 8vh;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f19a0e;
+    margin-top: 1.4rem;
+    margin-left: 2rem;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pop-up-partnership .pop-up-content-partnership .close-button{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 15px;
+    height: 15px;
+    background: #f19a0e;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.pop-up-partnership .pop-up-content-partnership .form-partnership .form-element input[type ="text"]:hover{
+    background-color: #333;
+    color: #f19a0e;   
+}
+.pop-up-partnership .pop-up-content-partnership .form-partnership .form-element input[type ="email"]:hover{
+    background-color: #333;
+    color: #f19a0e;
+}
+.pop-up-partnership .form-partnership .form-element button:hover{
+    background-color: #f19a0e;
+    color: white;
+}
+
+/* contact form */
+
+.contact-form{
+    position: absolute;
+    left: 200px;
+    background-image: url(/Images/ABOUT\ US.svg);
+    background-attachment: fixed;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    width: 65vw;
+    margin-left: 7rem;
+    margin-top: 18rem;
+    height: 170vh;
+    padding: 20px 30px; 
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.pop-up-partnership .contact-form .form-partnership {
+    width: 55vw;
+    margin-top: 10rem;   
+}
+
+.contact-form > .form-partnership{
+    z-index:2;
+    position: absolute; 
+    margin-top: 15rem;
+    width: 930px;
+}
+
+.partnership-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -13rem;
+}
+
+.partnership-details-header > img{
+    width: 10vw;
+}
+
+.partnership-details-header > p{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #f19a0e;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+ .contact-form > img{
+    position: absolute;
+    left: 260px;
+    top: 320px;
+    width: 30vw;
+    height: 60vh;
+    opacity: 1;
+    z-index: 1;
+}
+
+#new{
+    margin: 1rem;
+}
+
+.contact-form .form-partnership .form-element label{
+padding: 1rem;
+font-size: 1.7rem;
+font-weight: 600;
+border-radius: 1rem;
+margin-left: 1rem;
+width: 10vw;
+text-align: center;
+background-color: #f19a0e;
+}
+
+ .contact-form .form-partnership .form-element input[type ="text"],
+.contact-form  .form-partnership .form-element input[type ="email"]
+{
+width: 60vw;
+display: block;
+margin-top: 1.7rem;
+margin-left: 1rem;
+margin-block: 2rem;
+padding: 1rem;
+border:none;
+outline: none;
+border-radius: 1rem;
+transition: ease-in-out 0.3s;
+}
+
+.contact-form  .form-partnership .form-element input[type ="checkbox"]{
+    display: inline-block;
+    margin-block: 3.1rem;
+    margin-inline: 1rem;
+}
+
+
+.contact-form .form-partnership .form-element button{
+    width: 30vw;
+    height: 8vh;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f19a0e;
+    margin-top: 1.4rem;
+    margin-left: 19rem;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pop-up-partnership .contact-form .form-partnership .form-element input[type ="text"]:hover{
+    background-color: #333;
+    color: #f19a0e;   
+}
+.pop-up-partnership .contact-form .form-partnership .form-element input[type ="email"]:hover{
+    background-color: #333;
+    color: #f19a0e;
+}
+.pop-up-partnership .form-partnership .form-element button:hover{
+    background-color: #f19a0e;
+    color: white;
+}
